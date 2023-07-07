@@ -35,6 +35,10 @@
   },
   "name": "jw-product-card",
   "author": "Jwilv",
+  "repository": {
+    "url": "https://github.com/Jwilv/jw-product-card",
+    "type": "git"
+  },
   "module": "dist/jw-product-card.esm.js",
   "size-limit": [
     {
