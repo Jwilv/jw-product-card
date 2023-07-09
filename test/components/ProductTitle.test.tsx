@@ -10,10 +10,6 @@ describe('ProductTitle', () => {
 
     afterEach(cleanup)
 
-    it('renders without crashing', () => {
-        expect(true).toBe(true)
-    });
-
     it('render ProductTitle', () => {
         const wrapper = render(<ProductTitle title='hola' className='white-text' />)
         expect(wrapper).toMatchSnapshot()
