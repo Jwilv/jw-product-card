@@ -16,10 +16,10 @@ export const ProductImg = ({ img, className, style }: ProductImgProps) => {
 
     const { product } = useContext(ProductContext)
 
-    let imgToShow = product.img;
+    let imgToShow = img;
 
-    if (img) {
-        imgToShow = img;
+    if ( !img && product?.img) {
+        imgToShow = product.img;
     } else if (!img && !product.img) {
         imgToShow = noImg;
     }
